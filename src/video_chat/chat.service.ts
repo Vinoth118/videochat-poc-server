@@ -2,7 +2,7 @@ import {
   ChatMessage,
   CallRoom,
   CallRoomDocument,
-} from 'src/models/call_room.model';
+} from '../models/call_room.model';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';

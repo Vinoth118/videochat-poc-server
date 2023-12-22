@@ -14,7 +14,7 @@
   import * as mongoose from 'mongoose';
   import { Observable } from 'rxjs';
   import { Server, Socket } from 'socket.io';
-import { CallRoom, CallRoomSchema } from 'src/models/call_room.model';
+import { CallRoom, CallRoomSchema } from '../models/call_room.model';
 import { SocketUser, SocketWithUser } from '../redis/redis-io.adapter';
 import { CallRoomChatService } from './chat.service';
   

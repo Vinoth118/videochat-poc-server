@@ -3,8 +3,8 @@ import { InjectModel } from '@nestjs/mongoose';
 import { RtcRole, RtcTokenBuilder } from 'agora-access-token';
 import { Model } from 'mongoose';
 import { SubDomain } from 'src/decorators';
-import { CallRoom, CallRoomDocument } from 'src/models/call_room.model';
-import { User, UserDocument } from 'src/models/user.model';
+import { CallRoom, CallRoomDocument } from '../models/call_room.model';
+import { User, UserDocument } from '../models/user.model';
 import { ChatRequestDto, VideoChatRequestDto } from './dto/video_chat_dto';
 
 export interface VideoInitRequest {
