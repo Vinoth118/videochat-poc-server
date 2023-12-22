@@ -2,8 +2,8 @@ import { UserType } from './../models/user.model';
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { VideoChatService } from './video_chat.service';
 import { ChatRequestDto, VideoChatRequestDto } from './dto/video_chat_dto';
-import { PlainBody, Subdomain, SubDomain } from 'src/decorators';
-import { OneSignalService } from 'src/onesignal.service';
+import { PlainBody, Subdomain, SubDomain } from '../decorators';
+import { OneSignalService } from '../onesignal.service';
 import * as moment from 'moment';
 
 @Controller('video_chat')

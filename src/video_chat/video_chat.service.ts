@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { RtcRole, RtcTokenBuilder } from 'agora-access-token';
 import { Model } from 'mongoose';
-import { SubDomain } from 'src/decorators';
+import { SubDomain } from '../decorators';
 import { CallRoom, CallRoomDocument } from '../models/call_room.model';
 import { User, UserDocument } from '../models/user.model';
 import { ChatRequestDto, VideoChatRequestDto } from './dto/video_chat_dto';
