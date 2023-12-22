@@ -21,6 +21,7 @@ export class RedisIoAdapter extends IoAdapter {
   async connectToRedis(): Promise<void> {
     const pubClient = createClient({
       url: `redis://${process.env.REDIS_LIVE_CHAT_PUBSUB_ADAPTER_HOST}:${process.env.REDIS_LIVE_CHAT_PUBSUB_ADAPTER_PORT}`,
+      password: process.env.REDIS_LIVE_CHAT_PUBSUB_ADAPTER_PASSWORD
     });
     const subClient = pubClient.duplicate();
 
