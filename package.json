@@ -27,6 +27,7 @@
     "@nestjs/mongoose": "^9.0.3",
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/platform-socket.io": "^8.4.7",
+    "@nestjs/websockets": "9.1.4",
     "@socket.io/redis-adapter": "^8.2.1",
     "agora-access-token": "^2.0.4",
     "axios": "^1.6.0",
