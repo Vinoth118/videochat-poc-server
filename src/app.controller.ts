@@ -8,6 +8,11 @@ import { UserType } from './models/user.model';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get('/')
+  async welcomePage(@Subdomain() subdomain: SubDomain) {
+    return { success: true, message: 'Welcome '+subdomain }
+  }
+
   @Get('/users')
   async getUsers(@Subdomain() subdomain: SubDomain) {
     const result = await this.appService.getUsers();
