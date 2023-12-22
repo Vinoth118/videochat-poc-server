@@ -15,7 +15,7 @@ export interface ChatMessageType {
 export interface CallRoomType {
   callType: 'chat' | 'video_chat';
   user: string;
-  org: 'vinoth' | 'vijay';
+  org: 'vinothh' | 'vijayy';
   chats: ChatMessageType[]
 }
 
@@ -47,8 +47,8 @@ export class CallRoom extends Document {
   @Prop({ type: String, ref: User.name, required: true })
   user: mongoose.Schema.Types.ObjectId
 
-  @Prop({ type: String, required: true, enum: ['vinoth', 'vijay'] })
-  org: 'vinoth' | 'vijay'
+  @Prop({ type: String, required: true, enum: ['vinothh', 'vijayy'] })
+  org: 'vinothh' | 'vijayy'
 
   @Prop({ type: [ChatMessageSchema], default: [] })
   chats: ChatMessage[];

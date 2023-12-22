@@ -10,7 +10,7 @@ export interface NotificationPayload {
   msgName: string,
   msg: string,
   to: string[],
-  org: 'vinoth' | 'vijay'
+  org: 'vinothh' | 'vijayy'
 }
 
 @Injectable()
@@ -18,14 +18,14 @@ export class OneSignalService {
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
   organisationDetails = [
     {
-      name: 'vinoth',
-      id: 'vinoth.trendytreasures.nl',
+      name: 'vinothh',
+      id: 'vinothh.trendytreasures.nl',
       onesignalAppId: 'f1d85bd3-8bf5-4866-a660-d9a716351907',
       restApiKey: 'MWVmY2Y1N2MtYjk1NS00YWJhLWEyMzUtMWU4YjZmZTU0MTg4'
     },
     {
-      name: 'vijay',
-      id: 'vijay.trendytreasures.nl',
+      name: 'vijayy',
+      id: 'vijayy.trendytreasures.nl',
       onesignalAppId: '5c07872a-6df4-45e0-b9b9-b935091cdf75',
       restApiKey: 'OTllMTliNzAtN2RlMi00MTUxLTkwZWEtYWI1OTFhYjBkMmUx'
     }

@@ -7,7 +7,7 @@ export interface UserType {
     name: string;
     email: string;
     type: 'admin' | 'customer';
-    org: 'vinoth' | 'vijay';
+    org: 'vinothh' | 'vijayy';
     osId?: string;
     subscriptions?: { id: string, token: string, type: string }[];
 }
@@ -23,8 +23,8 @@ export class User extends Document {
   @Prop({ type: String, enum: ['admin', 'customer'], required: true })
   type: 'admin' | 'customer'
 
-  @Prop({ type: String, required: true, enum: ['vinoth', 'vijay'] })
-  org: 'vinoth' | 'vijay'
+  @Prop({ type: String, required: true, enum: ['vinothh', 'vijayy'] })
+  org: 'vinothh' | 'vijayy'
 
   @Prop({ type: String, required: false, default: '' })
   osId?: string
